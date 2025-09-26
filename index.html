@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hexatunes</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body onload="fadeObjects()">
+    <img src = "images/StaffBG.png" id = "StaffBG">
+    <img src = "images/TrebleClef.png" id = "Clef">
+
+    <img src = "images/Hexagon.png" id = "Hex1">
+    <img src = "images/Hexagon.png" id = "Hex2">
+    <img src = "images/Hexagon.png" id = "Hex3">
+
+    <img src = "images/Hexatunes.png" id = "Hexatunes">
+    <p id = "NameP">Hexatunes</p>
+    <p id = "SubP">Game Developer, Music Producer, Violinist</p>
+    <p id = "SATP">(Yes, I have a perfect 1600 SAT score)</p>
+
+    
+
+    <div id = "ShowcaseDiv">
+        <div id = "RelapseDiv">
+            <input type="image" class = "ShowcaseThumbnail" src = "images/RelapseThumbnail.png"> 
+            <br><a href = "/relapse.html" class = "ShowcaseTitle" onmouseover="showcaseText('A rhythm game where you read sheet music.', '')">Relapse</a>
+            <p class = "ShowcaseSub">A rhythm game where you read sheet music.</p>
+        </div>
+        <div id = "SomenDiv">
+            <input type="image" href = "/somen.html" class = "ShowcaseThumbnail" src = "images/SomenThumbnail.png"> 
+            <br><a href = "/somen.html" class = "ShowcaseTitle">Somen Spirits</a>
+            <p class = "ShowcaseSub">An unofficial battle simulator for Yo-kai Watch inspired by Pokemon Showdown!</p>
+        </div>
+    </div>
+
+  
+  <script src="./script.js" ></script>
+</body>
+
+</html>

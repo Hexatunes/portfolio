@@ -1,0 +1,180 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: comf;
+  src: url('./Comfortaa.ttf');
+}
+
+p{
+    font-family: comf;
+}
+
+a {
+    text-decoration: none;
+    font-family: comf;
+}
+
+body {
+  background-image: url('/images/BG.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#StaffBG {
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+#Clef {
+    position: absolute;
+    width: 17vmin;
+    height: 17vmin;
+    top: 10%;
+    left: 7%;
+    transform: translate(-50%, -50%);
+}
+
+#Hex1 {
+    position: absolute;
+    width: 20vmin;
+    height: 20vmin;
+    top: 65%;
+    left: 5%;
+    transform: rotate(35deg);
+}
+
+#Hex2 {
+    position: absolute;
+    width: 40vmin;
+    height: 40vmin;
+    top: 45%;
+    left: 35%;
+    transform: rotate(-15deg);
+}
+
+#Hex3 {
+    position: absolute;
+    width: 30vmin;
+    height: 30vmin;
+    top: 65%;
+    left: 70%;
+    transform: rotate(-45deg);
+}
+
+#Hexatunes {
+    position: absolute;
+    opacity: 0;
+    width: 110vmin;
+    height: 110vmin;
+    left: 25%;
+    top: 60%;
+}
+
+#NameP {
+    position: absolute;
+    font-size: 15vmin;
+    color: aliceblue;
+    top: 10%;
+    left: 40%;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    opacity: 0;
+}
+
+#SubP {
+    position: absolute;
+    font-size: 4vmin;
+    color: #89CFF0;
+    top: 35%;
+    left: 40%;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    opacity: 0;
+}
+
+#SATP {
+    position: absolute;
+    font-size: 2vmin;
+    color: #353535;
+    top: 42%;
+    left: 40%;
+    text-shadow:
+    -1px -1px 0 #000000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+#ShowcaseDiv {
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    left: 40%;
+    top: 50%;
+    overflow-y: scroll;
+    grid-template-columns: 1fr 1fr; /* 2 equal-width columns */;
+    display: grid;
+}
+
+#RelapseDiv {
+    opacity: 0;
+}
+
+#SomenDiv {
+    opacity: 0;
+}
+
+.ShowcaseThumbnail {
+    width: 90%;
+    border-radius: 5%;
+}
+
+.ShowcaseTitle {
+    color: #fff;
+    font-size: 2vw;
+}
+.ShowcaseSub {
+    color: #fff;
+    font-size: 1vw;
+}
+
+.FadeUp {
+  opacity: 0;
+  transform: translateY(20%); /* start slightly lower */
+  animation: fadeUp 0.5s ease-out forwards; /* run on load */
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0); /* move to normal spot */
+  }
+}
+
+.FadeUpOffset {
+  opacity: 0;
+  transform: translate(-50%, -20%); /* start slightly lower */
+  animation: fadeUpO 0.5s ease-out forwards; /* run on load */
+}
+
+@keyframes fadeUpO {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* move to normal spot */
+  }
+}
